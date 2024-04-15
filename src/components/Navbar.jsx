@@ -28,17 +28,22 @@ export const Navbar = () => {
             <ul className="flex flex-col gap-2 mt-2 mb-4 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
               <li className="block px-5  py-2 rounded-lg  antialiased  leading-normal text-blue-gray-900 dark:bg-d-card">
                 <a href="#" class="flex items-center dark:text-d-text">
-                  Phim lẻ
+                  Movie
                 </a>
               </li>
               <li className="block px-5 py-2 dark:bg-d-card rounded-lg  antialiased  leading-normal text-blue-gray-900">
                 <a href="#" className="flex items-center dark:text-d-text">
-                  Phim bộ
+                  Cinema
                 </a>
               </li>
               <li className="block px-5 py-2 dark:bg-d-card rounded-lg  antialiased  leading-normal text-blue-gray-900">
                 <a href="#" className="flex items-center dark:text-d-text">
-                  Khác
+                  News
+                </a>
+              </li>
+              <li className="block px-5 py-2 dark:bg-d-card rounded-lg  antialiased  leading-normal text-blue-gray-900">
+                <a href="#" className="flex items-center dark:text-d-text">
+                  Abouts
                 </a>
               </li>
               <button

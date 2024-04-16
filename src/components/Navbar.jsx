@@ -27,7 +27,7 @@ export const Navbar = () => {
           <div className="hidden mr-4 lg:block">
             <ul className="flex flex-col gap-2 mt-2 mb-4 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
               <li className="block px-5  py-2 rounded-lg  antialiased  leading-normal text-blue-gray-900 dark:bg-d-card">
-                <a href="#" class="flex items-center dark:text-d-text">
+                <a href="#" className="flex items-center dark:text-d-text">
                   Movie
                 </a>
               </li>

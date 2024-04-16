@@ -6,6 +6,7 @@ import { Movie } from "../components/Movie";
 import { Link } from "react-router-dom";
 import { Mail } from "../components/Mail";
 import { Footer } from "../components/Footer";
+import { Search } from "../components/Search";
 
 export const Home = () => {
   const [activeTheme, setTheme] = useTheme();
@@ -14,31 +15,30 @@ export const Home = () => {
       <div className="relative flex mx-auto mt-[65px] py-4  items-center w-[98%] rounded-2xl overflow-hidden">
         <Banner />
       </div>
-      {/* <div className="absolute top-[25%] left-[18%] z-10">
+      <div className="absolute top-[17%] left-[28%] z-10">
           <Search />
-      </div> */}
+      </div>
       <div className="flex w-[80%] flex-wrap mx-auto justify-center h-full">
         <div className="flex flex-col w-full gap-2">
-          {/* <Title
-            title="Offers"
-            dess="Promotions, deals and special offers for you"
+          <Title
+            title="Cinema Specials"
+            dess="Promotions, discounts and special offers at the cinema"
           />
           <div className="flex w-full justify-center items-center gap-5 px-5 my-2">
             <div className="flex w-[50%] justify-between items-center p-2">
               <div className="flex flex-col items-start gap-3">
                 <h2 className="font-bold text-lg dark:text-d-text">
-                  Take your longest holiday yet
+                  Enjoy an extended cinematic experience yet!
                 </h2>
                 <p className="text-p-text text-md dark:text-d-text">
-                  Browse properties offering long-term stays, many at reduced
-                  monthly rates.
+                  Please book your tickets to enjoy an exciting movie screening together!
                 </p>
-                <button className="py-2 px-5 rounded-lg bg-dark text-d-text dark:bg-d-card transition-all hover:translate-y-[-5px] hover:bg-light border hover:border-dark hover:text-light ">
-                  Find a stay
+                <button className="py-2 px-5 rounded-lg bg-dark text-d-text dark:bg-d-card transition-all hover:translate-y-[-5px] hover:bg-light border hover:border-dark hover:text-d-text ">
+                  Find movie
                 </button>
               </div>
               <img
-                src="https://r-xx.bstatic.com/xdata/images/xphoto/500x500/220031205.jpeg?k=bf9841e8ba89dfdf92e02d45e45dc89fcca2d981b7c74ad57d3ecf6ba64ba1c2&o="
+                src="https://cdn.moveek.com/storage/media/cache/large/5c19ba23c81a3744549271.jpg"
                 alt=""
                 className="w-[124px] h-[124px] object-cover rounded-lg"
               />
@@ -46,7 +46,7 @@ export const Home = () => {
             <div className="flex w-[50%] justify-between items-center p-2">
               <div className="relative w-full">
                 <img
-                  src="https://q-xx.bstatic.com/xdata/images/xphoto/714x300/293799350.jpeg?k=8a6f4e24c37096fbdcd3c3d30c9f3dcea15ce35751448466decf791918012a64&o="
+                  src="https://i.pinimg.com/originals/05/d4/cb/05d4cbc50b0e3d2e86b1d2730dd41a68.jpg"
                   alt=""
                   className="w-full h-[156px] rounded-lg object-cover"
                 />
@@ -54,7 +54,7 @@ export const Home = () => {
               </div>
               <img src="" alt="" />
             </div>
-          </div> */}
+          </div>
           <Title
             title="Trending movie"
             dess=""

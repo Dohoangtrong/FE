@@ -6,6 +6,7 @@ import { Register } from './views/Register'
 import { Navbar } from './components/Navbar'
 import { Forgot } from './views/Forgot'
 import { List } from './views/List'
+import { Movie } from './views/Movie'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path='/register' element ={<Register />} />
         <Route path='/forgot' element ={<Forgot />} />
         <Route path='/list' element ={<List />} />
+        <Route path='/movie' element ={<Movie />} />
       </Routes>
     </BrowserRouter>
   )

@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    padding:40px 0px 50px 0px;
   }
   
   .listWrapper {
@@ -13,18 +14,13 @@
   
   .listSearch {
     flex: 1;
+    max-width: 360px;
     background-color: #cdb063;
     padding: 10px;
     border-radius: 10px;
     position: sticky;
-    top: 10px;
+    top: 80px;
     height: max-content;
-  }
-  
-  .lsTitle{
-    font-size: 20px;
-    color: #555;
-    margin-bottom: 10px;
   }
   
   .lsItem{
@@ -35,6 +31,7 @@
   }
   
   .lsItem>label{
+    padding-bottom: 3px;
     padding-left: 10px;
     font-size: 16px;
   }
@@ -44,11 +41,12 @@
   }
   .lsItem>span{
     height: 30px;
-    padding: 5px;
+    padding: 5px 15px;
     background-color: white;
     display: flex;
     align-items: center;
     cursor: pointer;
+    border-radius: 5px;
   }
   
   .listSearch>button{
@@ -63,5 +61,15 @@
   }
   
   .listResult {
-    flex: 3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .notification {
+    display: flex;
+    font-size: 50px;
+    align-items: center;
+    justify-content: center; 
+    margin-left: 300px;
   }

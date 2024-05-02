@@ -3,7 +3,6 @@ import { useTheme } from "../hooks/useTheme";
 import { Banner } from "../components/Banner";
 import { Title } from "../components/Title";
 import { Movie } from "../components/Movie";
-import { Link } from "react-router-dom";
 import { Mail } from "../components/Mail";
 import { Footer } from "../components/Footer";
 import { Search } from "../components/Search";

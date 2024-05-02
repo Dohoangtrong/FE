@@ -4,7 +4,7 @@ import { format } from "date-fns";
 import { Calendar } from "react-date-range";
 import "react-date-range/dist/styles.css"; 
 import "react-date-range/dist/theme/default.css"; 
-import { SearchFeed } from "../components/SearchFee";
+import { Film } from "../components/Film";
 import { useFetch } from "../hooks/useFetch";
 import './List.css'
 export const List = () => {
@@ -16,19 +16,16 @@ export const List = () => {
     setDate(date); 
   };
 
-  const { data, loading, error, reFetch } = useFetch(`/lists?movie=${movie}`
-  );
-  console.log(data);
+  const { data, loading, error, reFetch } = useFetch(`/film/getFilm?movie=${movie}`);
   const handleClick = () => {
     reFetch();
   };
   return (
-    <div className="listContainer mt-20">
+    <div className="dark:bg-dark listContainer mt-10">
       <div className="listWrapper">
         <div className="listSearch">
-          <h1 className="lsTitle">Search</h1>
           <div className="lsItem">
-            <label>Movie</label>
+            <label></label>
             <input className="w-full py-2 px-3 outline-none" placeholder="What movie are you looking for?" type="text" />
           </div>
           <div className="lsItem">
@@ -43,14 +40,18 @@ export const List = () => {
           </div>
           <button onClick={handleClick}>Search</button>
         </div>
-        <div className="listResult">
+        <div className="dark:text-d-text listResult">
          {data &&  loading ? (
             "loading"
           ) : (
             <>
-              {data.map((item) => (
-                <SearchFeed item={item} key={item._id} />
-              ))}
+              {data && data.length > 0 ? (
+                data.map((item) => (
+                  <Film item={item} key={item._id} style={{margin: "0 6px 50px 6px"}}/>
+                ))
+              ) : (
+                <div className="notification">Movie not found</div>
+              )}
             </>
           )}
         </div>

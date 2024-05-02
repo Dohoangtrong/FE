@@ -1,0 +1,60 @@
+.searchItem {
+    border: 1px solid lightgray;
+    padding: 10px;
+    border-radius: 5px;
+    width: 295px;
+    display: flex;
+    justify-content: flex-start; 
+    flex-direction: column;
+  }
+
+  
+  .siImg {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .siDesc {
+    margin-top: 12px; 
+    text-align: center;
+  }
+  
+  .siTitle {
+    padding: 0px 10px 10px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #0071c2;
+    overflow: hidden; 
+    white-space: nowrap; 
+    text-overflow: ellipsis; 
+  }
+  
+  .siDescription{
+    text-align: left;
+    font-size: 17px;
+    padding-left: 10px;
+  }
+  
+  .siDetails {
+    padding: 20px 0px 6px 0px;
+    flex-direction: column;
+  }
+  
+  .siDetailTexts{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .siCheckButton{
+    background-color: #0071c2;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
